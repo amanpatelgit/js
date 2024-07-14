@@ -36,3 +36,27 @@ const myFunction = function(){
 // myFunction()
 
 console.log(typeof myFunction);
+
+// +++++++++++++++++++++++++++++++++++++++++++++
+
+// Stack (Primitive) gives copy , Heap (Non-Primitive) gives reference
+
+let myYoutubeName = "amanpatel"
+
+let anotherName = myYoutubeName
+anotherName = "PatelOnFire"
+
+console.log(myYoutubeName);
+console.log(anotherName);
+
+let userOne = {
+    email: "user@google.com",
+    upi: "user@ybl"
+}
+
+let userTwo = userOne
+
+userTwo.email = "aman@google.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
